@@ -8,6 +8,7 @@ services:
       - "9092"
     volumes:
       - ./sonar/plugins:/opt/sonarqube/extensions/plugins
+      - ./sonar/logs:/opt/sonarqube/logs
     links:
       - db
     environment:
